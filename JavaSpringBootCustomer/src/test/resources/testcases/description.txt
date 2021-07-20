@@ -1,0 +1,2 @@
+http00.json: Get all customers
+http01.json: Delete customer by id

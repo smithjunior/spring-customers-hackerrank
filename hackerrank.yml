@@ -1,0 +1,15 @@
+version: 1.0
+configuration:
+  has_webserver: false
+  scoring:
+    command: "cd JavaSpringBootCustomer; mvn clean test"
+    files:
+      - "JavaSpringBootCustomer/target/customReports/result.xml"
+  ide_config:
+    default_open_files:
+      - JavaSpringBootCustomer/src/main/java/com/hackerrank/customers/controller/CustomerController.java
+      - JavaSpringBootCustomer/src/main/java/com/hackerrank/customers/model/Customer.java
+    project_menu:
+      run: "cd JavaSpringBootCustomer; mvn clean spring-boot:run"
+      install: "cd JavaSpringBootCustomer; mvn clean install"
+      test: "cd JavaSpringBootCustomer; mvn clean test; cat target/customReports/result.txt"
