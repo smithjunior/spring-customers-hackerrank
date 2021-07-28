@@ -1,18 +1,13 @@
 package com.hackerrank.customers.model;
 
-import javax.persistence.*;
-import java.io.Serializable;
 import java.util.List;
 
-@Entity
-public class Customer implements Serializable {
+public class Customer {
 
-    @Id
     private Long id;
 
     private String name;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Address> addresses;
 
     public Customer() {
