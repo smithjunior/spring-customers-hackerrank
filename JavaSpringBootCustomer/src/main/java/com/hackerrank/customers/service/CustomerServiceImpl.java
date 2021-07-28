@@ -1,7 +1,7 @@
 package com.hackerrank.customers.service;
 
-import com.hackerrank.customers.excpetion.BadResourceRequestException;
-import com.hackerrank.customers.excpetion.NoSuchResourceFoundException;
+import com.hackerrank.customers.exception.BadResourceRequestException;
+import com.hackerrank.customers.exception.NoSuchResourceFoundException;
 import com.hackerrank.customers.model.Customer;
 import com.hackerrank.customers.repository.CustomerRepository;
 import java.util.List;
