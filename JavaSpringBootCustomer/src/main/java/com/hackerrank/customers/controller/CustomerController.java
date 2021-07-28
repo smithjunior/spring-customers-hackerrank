@@ -25,7 +25,7 @@ public class CustomerController {
         customerService.deleteAllCustomers();
     }
 
-    @RequestMapping(value = "/customers/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/customers/{id}", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.OK)
     public void deleteCustomerById(@PathVariable Long id) {
         customerService.deleteCustomerById(id);
